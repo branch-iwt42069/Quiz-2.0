@@ -1,5 +1,4 @@
 dist: Trusty
-os: windows
 
 script:
   - git ls-files bin/ | xargs clang-format -i && git diff --exit-code
