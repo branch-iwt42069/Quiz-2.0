@@ -1,7 +1,7 @@
 dist: Trusty
 
 script:
-  - git ls-files bin/ | xargs clang-format -i && git diff --exit-code
+  - git ls-files scr/ | xargs clang-format -i && git diff --exit-code
 sudo: false
 language: cpp
 compiler: 
