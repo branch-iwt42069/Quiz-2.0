@@ -1,4 +1,5 @@
-dist: trusty  
+os: windows
+
 sudo: false
 language: cpp
 compiler: 
