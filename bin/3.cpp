@@ -27,8 +27,8 @@ int main()
 {
 
 cout << "* * * * * *" << endl;
-cout << "*Title here*" << endl;
-cout << "* * * * * *" << endl;
+cout << "*Title here*" << endl; 
+cout << "* * * * * *" << endl; // making menu
 
 cout << "Press Enter to start the quiz .. " << endl;
 cin.get();
@@ -54,5 +54,4 @@ else {
 	cout << "ok, goodbye!" << endl;
 	return 0;
 }
-
 
