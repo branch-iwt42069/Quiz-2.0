@@ -5,6 +5,8 @@ int main()
     cout << "* * * * * *" << endl;
     cout << "*Title here*" << endl;
     cout << "* * * * * *" << endl; // making menu
+    
+    cout << "MADE BY NOSKOV SERGEY, STEPANCHENKO EGOR AND MATASHEV VLADIMIR"  <<endl;
 
     cout << "Press Enter to start the quiz .. " << endl;
     cin.get();
