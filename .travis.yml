@@ -1,5 +1,6 @@
-dist: trusty  
-sudo: false
+dist: trusty
+script:
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code
 language: cpp
 compiler: 
   -g++
