@@ -4,8 +4,7 @@ int main()
 {
     cout << "* * * * * *" << endl;
     cout << "*Title here*" << endl;
-    cout << "* * * * * *" << endl; // making menu
-    
+    cout << "* * * * * *" << endl; // making menu  
 
     cout << "Press Enter to start the quiz .. " << endl;
     cin.get();
