@@ -2,5 +2,3 @@ dist: trusty
 language: cpp
 compiler: 
   -g++
-os:
-"windows"
