@@ -4,9 +4,15 @@ using namespace std;
 
 int main()
 {
-	cout << "* * * * * *" << endl;
-	cout << "*Title here*" << endl;
-	cout << "* * * * * *" << endl; // making menu  
+	cout << "'########:'########::'######::'########:" << endl;
+	cout << "... ##..:: ##.....::'##... ##:... ##..::" << endl;
+	cout << "::: ##:::: ##::::::: ##:::..::::: ##::::" << endl;
+	cout << "::: ##:::: ######:::. ######::::: ##::::" << endl;
+	cout << "::: ##:::: ##...:::::..... ##:::: ##::::" << endl;
+	cout << "::: ##:::: ##:::::::'##::: ##:::: ##::::" << endl;
+	cout << "::: ##:::: ########:. ######::::: ##::::" << endl;
+	cout << ":::..:::::........:::......::::::..:::::" << endl;
+	
 	
 	cout << "MADE BY NOSKOV SERGEY, STEPANCHENKO EGOR AND MATASHEV VLADIMIR"<<endl;
 
