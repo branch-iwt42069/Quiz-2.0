@@ -26,7 +26,6 @@ BraceWrapping:
   AfterNamespace:  false
   AfterStruct:     false
   AfterUnion:      false
-  AfterExternBlock: false
   BeforeCatch:     false
   BeforeElse:      false
   IndentBraces:    false
@@ -49,9 +48,7 @@ Cpp11BracedListStyle: true
 DerivePointerAlignment: false
 ExperimentalAutoDetectBinPacking: false
 FixNamespaceComments: false
-IncludeBlocks:   Preserve
 IndentCaseLabels: false
-IndentPPDirectives: None
 IndentWidth:     4
 IndentWrappedFunctionNames: false
 KeepEmptyLinesAtTheStartOfBlocks: false

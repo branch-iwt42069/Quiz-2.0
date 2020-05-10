@@ -1,8 +1,16 @@
+<<<<<<< test
+dist: trusty
+
+script:
+- make
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code 
+=======
 dist: Trusty
 
 script:
   - git ls-files scr/ | xargs clang-format -i && git diff --exit-code
 sudo: false
+>>>>>>> master
 language: cpp
 compiler: 
   -g++

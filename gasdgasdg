@@ -1,0 +1,43 @@
+* [33m6739f53[m[33m ([m[1;31morigin/test[m[33m)[m Fix program
+* [33ma0dc91b[m Fix .travis.yml
+* [33m40b4129[m Fix program
+* [33m1ab5259[m Fix program
+* [33mb2c7b0d[m Fix program
+* [33m7169094[m Change .travis.yml
+* [33m0ec9943[m Fix program
+* [33m0b5217a[m Change .travis.yml
+* [33mf9f1243[m Change .travis.yml
+* [33m96a6907[m Change .travis.yml
+* [33m803bf89[m Fix program
+* [33m4f0853e[m Fix program
+* [33m71311d9[m Fix clang-format
+* [33m3023e76[m Fix clang-format
+* [33m4eda7ac[m Fix clang-format
+* [33m10c6118[m Change .travis.yml
+* [33m5a4fcc8[m Change structure
+[31m|[m * [33m686355e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Some changes
+[31m|[m *   [33ma8147c3[m Merge pull request #3 from branch-iwt42069/Sergey-2
+[31m|[m [33m|[m[31m\[m  
+[31m|[m [33m|[m[31m/[m  
+[31m|[m[31m/[m[33m|[m   
+* [33m|[m [33m453eb6f[m[33m ([m[1;31morigin/Sergey-2[m[33m)[m Add names
+* [33m|[m [33m11fbf32[m Update makefile
+* [33m|[m [33mef91240[m Add makefile
+[34m|[m * [33m501ac23[m FIXING THAT DAMN TRAVIS AGAIN
+[34m|[m * [33m4f5e0bf[m Some changes
+[34m|[m * [33m0ee2bea[m Programming MORE
+[34m|[m * [33m337ff70[m Fixing travis aGaInN....
+[34m|[m * [33md4fb7d0[m Fixing tavis again
+[34m|[m * [33mfe8061b[m Fixin
+[34m|[m[34m/[m  
+* [33m485a421[m[33m ([m[1;31morigin/Vladimir#2[m[33m)[m Added clang-format
+* [33m37bc27d[m Added bin
+*   [33md2a6fe5[m Merge pull request #2 from branch-iwt42069/Sergey
+[35m|[m[36m\[m  
+[35m|[m * [33m4e96c45[m[33m ([m[1;31morigin/Sergey[m[33m)[m add cout
+* [36m|[m [33m7bc614e[m Merge pull request #1 from branch-iwt42069/Sergey
+[1;31m|[m[36m\[m[36m|[m 
+[1;31m|[m * [33me08663d[m added first prog
+[1;31m|[m[1;31m/[m  
+* [33m0a8a741[m Added travis
+* [33m5051ce2[m Begin

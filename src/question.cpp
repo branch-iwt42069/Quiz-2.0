@@ -1,5 +1,7 @@
 #include "head.h"
 
+using namespace std;
+
 class Question {
 private:
     string Question_Text;
