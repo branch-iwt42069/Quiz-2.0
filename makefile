@@ -4,12 +4,13 @@ FLAG = -Wall -Werror -std=c99
 MDir=src/
 QDir=src/
 MMDir=Menu/
+BIN = bin/
 OBJECKTALL=$(Dir)main.o $(QDir)funcAnswer.o $(QDir)Questions1.o $(QDir)Questions2.o $(QDir)Questions3.o $(QDir)Questions4.o $(QDir)Questions5.o $(QDir)Questions6.o $(QDir)Questions7.o $(QDir)Questions8.o $(QDir)Questions9.o $(QDir)Questions10.o $(MMDir)Math.o $(MMDir)Res.o
 
 all: QuizzRunner
 
 QuizzRunner: 
-	$(CC) $(OBJECKTALL) -o QuizRunner
+	$(CC) $(OBJECKTALL) -o $(BIN)/QuizRunner
 
 main.o: $(MDir)main.cpp
 	$(CC) 
