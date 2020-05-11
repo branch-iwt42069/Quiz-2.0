@@ -2,6 +2,8 @@
 #define FUNCTION_H
 int main();
 
+int funcAnswer(char answer, char a, char b, char c, char d);
+
 int Question1(int yes);
 int Question2(int yes);
 int Question3(int yes);
