@@ -14,8 +14,11 @@ main :
 question :
 	$(Gpp) $(Gpp_FLAG) $(SRC)/question.cpp
 
+answers :
+	$(Gpp) $(Gpp_FLAG) $(SRC)/answers.cpp
+
 QUIZ :
-	$(Gpp) main.o question.o -o $(BIN)/QUIZ.exe
+	$(Gpp) main.o question.o ansswers.cpp -o $(BIN)/QUIZ.exe
 
 Clean:
 	rm -rf *.o
