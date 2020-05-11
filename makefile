@@ -6,7 +6,7 @@ BIN = ./bin
 
 SRC = ./src
 
-all : main question QUIZ Clean
+all : main question answers QUIZ Clean
 
 main :
 	$(Gpp) $(Gpp_FLAG) $(SRC)/main.cpp
@@ -18,7 +18,7 @@ answers :
 	$(Gpp) $(Gpp_FLAG) $(SRC)/answers.cpp
 
 QUIZ :
-	$(Gpp) main.o question.o ansswers.cpp -o $(BIN)/QUIZ.exe
+	$(Gpp) main.o question.o answers.o -o $(BIN)/QUIZ.exe
 
 Clean:
 	rm -rf *.o
