@@ -1,41 +1,35 @@
-#include "head.h"
+#include "../headers/functions.h"
+#include "../headers/design.h"
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <ncurses.h>
+#include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
-int main()
-{
-	cout << "'########:'########::'######::'########:" << endl;
-	cout << "... ##..:: ##.....::'##... ##:... ##..::" << endl;
-	cout << "::: ##:::: ##::::::: ##:::..::::: ##::::" << endl;
-	cout << "::: ##:::: ######:::. ######::::: ##::::" << endl;
-	cout << "::: ##:::: ##...:::::..... ##:::: ##::::" << endl;
-	cout << "::: ##:::: ##:::::::'##::: ##:::: ##::::" << endl;
-	cout << "::: ##:::: ########:. ######::::: ##::::" << endl;
-	cout << ":::..:::::........:::......::::::..:::::" << endl;
-	
-	
-	cout << "MADE BY NOSKOV SERGEY, STEPANCHENKO EGOR AND MATASHEV VLADIMIR"<<endl;
-
-	cout << "Press Enter to start the quiz .. " << endl;
-	cin.get();
-
-    string Name;
-    int Age;
-
-    cout << "What is your name?" << endl;
-    cin >> Name;
-    cout << endl;
-    cout << "How old are you?" << endl;
-    cin >> Age;
-    cout << endl;
-    string Respond;
-    cout << "Are you ready to take the quiz " << Name << "? Yes/no" << endl;
-    cin >> Respond;
-    if (Respond == "yes") {
-        cout << endl;
-        cout << "ok, goodluck!" << endl;
-    } else {
-        cout << "ok, goodbye!" << endl;
-        return 0;
-    }
+int main() {
+	readBase();
+	init();
+	short questionNumbers[20];
+	while (true) {
+		intro();
+		mainMenu();
+		
+		srand(time(NULL));
+       *questionNumbers = massive();
+		short resultCounter = 0;
+		short choose = 0;
+		for (short i = 0; i < 20; ++i) {
+			showQuestion(questionNumbers[i], i + 1);
+			choose = readKey();
+			if (checkAnswer(i, choose))
+				resultCounter++;
+		}
+		showResult(resultCounter);
+	}
+	endProgramm();
+	return 0;
 }
