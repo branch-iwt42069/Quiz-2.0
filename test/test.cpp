@@ -1,40 +1,39 @@
-#include <gtest/gtest.h> 
-#include "../headers/functions.h"
+#include <gtest/gtest.h>
 #include "../headers/design.h"
+
 using namespace std;
   
 TEST(CheckAnswer, Answer1){
-    short questionNumbers[20];
-    
-    *questionNumbers = massive();
-    1 == 1;
-
+	readBase();
+	short questionNumbers[20];
+	*questionNumbers=massive();
+    EXPECT_EQ(checkAnswer(0, 1), 1);
 }
-/*TEST(CheckAnswer,Answer2){
-short questionNumbers[20];
+TEST(CheckAnswer,Answer2){
+short questionNumbers1[20];
     
-    *questionNumbers = massive();
-EXPECT_EQ(checkAnswer( 2, 3), true );
+    *questionNumbers1 = massive();
+EXPECT_EQ(checkAnswer( 1, 3), 1 );
 
 }
 TEST(CheckAnswer,Answer3){
-short questionNumbers[20];
+short questionNumbers3[20];
     
-    *questionNumbers = massive();
-EXPECT_EQ(checkAnswer( 3, 1), true );
+    *questionNumbers3 = massive();
+EXPECT_EQ(checkAnswer( 2, 1), 1 );
 
 }
 TEST(CheckAnswer,Answer4){
-short questionNumbers[20];
+short questionNumbers4[20];
     
-    *questionNumbers = massive();
-EXPECT_EQ(checkAnswer( 4, 3), true );
+    *questionNumbers4 = massive();
+EXPECT_EQ(checkAnswer( 3, 3), 1 );
 
 }
 TEST(CheckAnswer,Answer5){
 short questionNumbers[20];
     
     *questionNumbers = massive();
-EXPECT_EQ(checkAnswer( 5, 3), true );
+EXPECT_EQ(checkAnswer( 4, 3), 1 );
 
-}*/
+}
