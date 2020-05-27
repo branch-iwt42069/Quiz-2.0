@@ -40,4 +40,45 @@ int readBase() {
 	return dataBase.size();
 }
 
+int readKey() {
+	while (true) {
+		char c = getch();
+		switch(c) {
+			case 'a': case 'A': case '1': {
+				return 1;
+				break;
+			}
+			case 'b': case 'B': case '2': {
+				return 2;
+				break;
+			}
+			case 'c': case 'C': case '3': {
+				return 3;
+				break;
+			}
+			case 'd': case 'D': case '4': {
+				return 4;
+				break;
+			}
+			case 27: {
+				endProgramm();
+				break;
+			}
+			default:
+				break;
+		}
+	}
+	return -1;
+}
 
+int checkAnswer(int questionNumber, int choose) {
+	if (dataBase[questionNumber].right_ans == choose)
+		return 1;
+	else
+		return 0;
+}
+
+void endProgramm() {
+	returnToNormalMode();
+	exit(0);
+}
