@@ -160,48 +160,48 @@ void showResult(short result) {
 	if (result <= 7) {
 		attron(COLOR_PAIR(1));
 		move(1, 10);
-		addstr("     ___   __   __   __    _   ___    _______   ______   ");
+		addstr("                                                                ");
 		move(2, 10);
-		addstr("    |   | |  | |  | |  |  | | |   |  |       | |    _ |  ");
+		addstr(" ######  ########  #### ##    ##  ######   ########             ");
 		move(3, 10);
-		addstr("    |   | |  | |  | |   |_| | |   |  |   _   | |   | ||  ");
+		addstr("##    ## ##     ##  ##  ###   ## ##    ##  ##                   ");
 		move(4, 10);
-		addstr("    |   | |  |_|  | |       | |   |  |  | |  | |   |_||_ ");
+		addstr("##       ##     ##  ##  ####  ## ##        ##                   ");
 		move(5, 10);
-		addstr(" ___|   | |       | |  _    | |   |  |  |_|  | |    __  |");
+		addstr("##       ########   ##  ## ## ## ##   #### ######               ");
 		move(6, 10);
-		addstr("|       | |       | | | |   | |   |  |       | |   |  | |");
+		addstr("##       ##   ##    ##  ##  #### ##    ##  ##                   ");
 		move(7, 10);
-		addstr("|_______| |_______| |_|  |__| |___|  |_______| |___|  |_|");
-		attroff(COLOR_PAIR(1));
+		addstr("##    ## ##    ##   ##  ##   ### ##    ##  ##       ### ### ### ");
+		move(8, 10);
+		addstr(" ######  ##     ## #### ##    ##  ######   ######## ### ### ### ");
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your pathetic result - %d", result);
 		move(14, 16);
-		addstr("Dude I bet you whatced 1st season of SAO and ");
+		addstr("Dude, I bet you whatced 1st season of SAO and ");
 		move(15, 16);
 		addstr("thinking that you are an anime pro.");
 		move(18, 16);
 		addstr("Get out of my sight!");
-		border(0, 0, 0, 0, 0, 0, 0, 0);                                           
+		                                          
 	} else
 	if (result <= 14) {
 		attron(COLOR_PAIR(1));
 		move(1, 10);
-		addstr(" __   __   ___    ______    ______    ___       _______ ");
+		addstr("##    ## ####  ######  ######## ");
 		move(2, 10);
-		addstr("|  |_|  | |   |  |      |  |      |  |   |     |       |");
+		addstr("###   ##  ##  ##    ## ##       ");
 		move(3, 10);
-		addstr("|       | |   |  |  _    | |  _    | |   |     |    ___|");
+		addstr("####  ##  ##  ##       ##       ");
 		move(4, 10);
-		addstr("|       | |   |  | | |   | | | |   | |   |     |   |___ ");
+		addstr("## ## ##  ##  ##       ######   ");
 		move(5, 10);
-		addstr("|       | |   |  | |_|   | | |_|   | |   |___  |    ___|");
+		addstr("##  ####  ##  ##       ##       ");
 		move(6, 10);
-		addstr("| ||_|| | |   |  |       | |       | |       | |   |___ ");
+		addstr("##   ###  ##  ##    ## ##       ");
 		move(7, 10);
-		addstr("|_|   |_| |___|  |______|  |______|  |_______| |_______|");
-		attroff(COLOR_PAIR(1));
+		addstr("##    ## ####  ######  ######## ");
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -211,7 +211,7 @@ void showResult(short result) {
 		addstr("but is it your limit?.");
 		move(18, 16);
 		addstr("Go whatch some anime!");
-		border(0, 0, 0, 0, 0, 0, 0, 0);       
+		    
 	} else
 	if (result <= 18) {
 		attron(COLOR_PAIR(1));
