@@ -9,7 +9,7 @@
 #include <locale.h>
 
 void init() {
-	//setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "");
 	initscr();
 	noecho();
 	curs_set(0);
@@ -42,6 +42,7 @@ void intro() {
 	addstr("| )      | ) \\ \\__| (___) || (___) |  | (_\\ \\ || (___) |___) (___ /   (_/\\");
 	move(8, 3);
 	addstr("|/       |/   \\__/(_______)(_______)  (____\\/_)(_______)\\_______/(_______/");
+	attroff(COLOR_PAIR(1));
 	attron(COLOR_PAIR(2));
 	move(11, 20);
 	addstr("Autors:");
@@ -78,6 +79,7 @@ void mainMenu() {
 	addstr("| )      | ) \\ \\__| (___) || (___) |  | (_\\ \\ || (___) |___) (___ /   (_/\\");
 	move(8, 3);
 	addstr("|/       |/   \\__/(_______)(_______)  (____\\/_)(_______)\\_______/(_______/");
+	attroff(COLOR_PAIR(1));
 	attron(COLOR_PAIR(2));
 	move(11, 10);
 	addstr("Rules:");
@@ -175,6 +177,7 @@ void showResult(short result) {
 		addstr("|       | |       | | | |   | |   |  |       | |   |  | |");
 		move(7, 10);
 		addstr("|_______| |_______| |_|  |__| |___|  |_______| |___|  |_|");
+		attroff(COLOR_PAIR(1));
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your pathetic result - %d", result);
@@ -202,6 +205,7 @@ void showResult(short result) {
 		addstr("| ||_|| | |   |  |       | |       | |       | |   |___ ");
 		move(7, 10);
 		addstr("|_|   |_| |___|  |______|  |______|  |_______| |_______|");
+		attroff(COLOR_PAIR(1));
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -229,6 +233,7 @@ void showResult(short result) {
 		addstr(" _____| | |   |___  | | |   | |   |  |       | |   |  | |");
 		move(8, 10);
 		addstr("|_______| |_______| |_|  |__| |___|  |_______| |___|  |_|");
+		attroff(COLOR_PAIR(1));
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -258,6 +263,7 @@ void showResult(short result) {
 		addstr("   | |   | (____/\\| )   ( || )   ( |  | (____/\\| (____/\\| )   ( || (__/  )");
 		move(8, 3);
 		addstr("   )_(   (_______/|/     \\||/     \\|  (_______/(_______/|/     \\|(______/ ");		
+		attroff(COLOR_PAIR(1));
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
