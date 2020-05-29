@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+dist: trusty
+
+script:
+- make
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code 
+language: cpp
+=======
  
  dist: bionic
  
@@ -23,6 +31,7 @@
 language:
    cpp
 
+>>>>>>> 0c69980dd41c1d2620a7163ddd840e146253e513
 compiler: 
    g++
  

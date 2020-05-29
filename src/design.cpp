@@ -147,6 +147,8 @@ void showQuestion(short questionNumber, short currentQuestion) {
 		printw("%c", c);
 	}
 
+	
+
 	refresh();
 }
 
@@ -160,6 +162,7 @@ void showResult(short result) {
 	if (result <= 7) {
 		attron(COLOR_PAIR(1));
 		move(1, 10);
+
 		addstr("                                                                ");
 		move(2, 10);
 		addstr(" ######  ########  #### ##    ##  ######   ########             ");
@@ -175,20 +178,26 @@ void showResult(short result) {
 		addstr("##    ## ##    ##   ##  ##   ### ##    ##  ##       ### ### ### ");
         move(8, 10);
 		addstr(" ######  ##     ## #### ##    ##  ######   ######## ### ### ### ");
+
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your pathetic result - %d", result);
 		move(14, 16);
+
 		addstr("Dude, I bet you whatced 1st season of SAO and ");
+
 		move(15, 16);
 		addstr("thinking that you are an anime pro.");
 		move(18, 16);
 		addstr("Get out of my sight!");
+
                                         
+
 	} else
 	if (result <= 14) {
 		attron(COLOR_PAIR(1));
 		move(1, 10);
+
 		addstr("##    ## ####  ######  ######## ");
 		move(2, 10);
 		addstr("###   ##  ##  ##    ## ##       ");
@@ -202,6 +211,7 @@ void showResult(short result) {
 		addstr("##   ###  ##  ##    ## ##       ");
 		move(7, 10);
 		addstr("##    ## ####  ######  ######## ");
+
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -210,12 +220,14 @@ void showResult(short result) {
 		move(15, 16);
 		addstr("but is it your limit?.");
 		move(18, 16);
-		addstr("Go whatch some anime!");
+
    
+
 	} else
 	if (result <= 18) {
 		attron(COLOR_PAIR(1));
 		move(2, 10);
+
 		addstr(" ######    #######   #######  ########  ");
 		move(3, 10);
 		addstr("##    ##  ##     ## ##     ## ##     ## ");
@@ -229,20 +241,24 @@ void showResult(short result) {
 		addstr("##    ##  ##     ## ##     ## ##     ## ");
 		move(8, 10);
 		addstr(" ######    #######   #######  ########  ");
+
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
 		move(14, 16);
+
 		addstr("Wow you are good bro.");
 		move(15, 16);
 		addstr("But you still is not as powerful as me!");
 		move(18, 16);
 		addstr("Go and whatch anime instead!");
       
+
 	} else
 	if (result <= 21) {
 		attron(COLOR_PAIR(1));
 		move(1, 3);
+
 		addstr("                                                                         ");
 		move(2, 3);
 		addstr(" #######  ##     ## ######## ########  ##     ## #### ##    ## ########  ");
@@ -258,6 +274,7 @@ void showResult(short result) {
 		addstr("##     ##   ## ##   ##       ##    ##  ##     ##  ##  ##   ### ##     ## ");
 		move(8, 3);
 		addstr(" #######     ###    ######## ##     ## ##     ## #### ##    ## ########  ");		
+
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -268,6 +285,7 @@ void showResult(short result) {
 		move(18, 16);
 		addstr("Anyway you can call yourself megamind!");
      
+
 	}
 	getch();
 }
