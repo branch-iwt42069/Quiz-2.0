@@ -231,7 +231,7 @@ void showResult(short result) {
 		addstr("|_______| |_______| |_|  |__| |___|  |_______| |___|  |_|");
 		attron(COLOR_PAIR(2));
 		move(11, 29);
-		printw("Твой результат - %d", result);
+		printw("Your result - %d", result);
 		move(14, 16);
 		addstr("Wow you are good bro");
 		move(15, 16);
@@ -240,7 +240,7 @@ void showResult(short result) {
 		addstr("Go and whatch anime ininsed!");
 		border(0, 0, 0, 0, 0, 0, 0, 0);       
 	} else
-	if (result <= 20) {
+	if (result <= 21) {
 		attron(COLOR_PAIR(1));
 		move(1, 3);
 		addstr("_________ _______  _______  _______    _        _______  _______  ______  ");
