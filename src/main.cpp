@@ -38,7 +38,7 @@ int main() {
         }
         showResult(resultCounter);
       }
-    } 
+    }
   }
   return 0;
 }
