@@ -1,61 +1,39 @@
-make=
-CC=g++
-FLAG = -Wall -Werror -std=c99
-Src=src/
-Menu=Menu/
-BIN = bin/
-OBJECKTALL=$(Src)main.o $(Src)funcAnswer.o $(Src)Questions1.o $(Src)Questions2.o $(Src)Questions3.o $(Src)Questions4.o $(Src)Questions5.o $(Src)Questions6.o $(Src)Questions7.o $(Src)Questions8.o $(Src)Questions9.o $(Src)Questions10.o $(Menu)Math.o $(Menu)Res.o clean
+TEST_FLAG =$(CFLAGS) -L /usr/local/lib -l $(GOOGLE_TEST_LIB) -l pthread -o
 
-all: QuizzRunner
+GOOGLE_TEST_LIB = gtest
 
-QuizzRunner: 
-	$(CC) $(OBJECKTALL) -o $(BIN)/QuizRunner
+GOOGLE_TEST_INCLUDE = /usr/local/include
 
-main.o: $(Src)main.cpp
-	$(CC) 
+CPPTEST_FLAGS = -c -Wall -I $(GOOGLE_TEST_INCLUDE)
 
+CFLAGS=-lstdc++ -lncurses -g -Wall -Werror -Wextra
 
-funcAncwer.o: $(Src) 
-	$(CC)
+all: executable
 
+run:
+	cd ./bin;./main.exe
 
-Questions1.o: $(Src)Questions1.cpp 
-	$(CC) 
+executable: design functions main
+	g++ obj/functions.o obj/design.o obj/main.o -o bin/main.exe $(CFLAGS)
 
-Questions2.o: $(Src)Questions2.cpp 
-	$(CC) 
+design: src/design.cpp
+	g++ src/design.cpp -c -o obj/design.o $(CFLAGS)
 
-Questions3.o: $(Src)Questions3.cpp 
-	$(CC) 
+main: src/main.cpp
+	g++ src/main.cpp -c -o obj/main.o $(CFLAGS)
 
-Questions4.o: $(Src)Questions4.cpp 
-	$(CC) 
-
-Questions5.o: $(Src)Questions5.cpp 
-	$(CC) 
-
-Questions6.o: $(Src)Questions6.cpp 
-	$(CC) 
-
-Questions7.o: $(Src)Questions7.cpp 
-	$(CC) 
-
-Questions8.o: $(Src)Questions8.cpp 
-	$(CC) 
-
-Questions9.o: $(Src)Questions9.cpp 
-	$(CC) 
-
-Questions10.o: $(Src)Questions10.cpp 
-	$(CC) 
-
-Res.o: $(Menu)Res.cpp 
-	$(CC) 
-
-Math.o: $(Menu)Math.cpp 
-	$(CC)  
-
-
+functions: src/functions.cpp
+	g++ src/functions.cpp -c -o obj/functions.o $(CFLAGS)
 
 clean:
-	rm -rf $(Src)*.o $(Menu)*.o 
+	rm -rf obj/*.o
+
+test: design functions
+	g++ $(CPPTEST_FLAGS) test/main.cpp -o test/main.o
+	g++ $(CPPTEST_FLAGS) test/test.cpp -o test/test.o
+	g++ test/main.o test/test.o obj/functions.o obj/design.o $(TEST_FLAG) bin/test.exe
+	
+runtest: 
+	cd ./bin;./test.exe
+	
+	
