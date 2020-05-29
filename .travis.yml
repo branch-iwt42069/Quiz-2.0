@@ -1,8 +1,44 @@
+<<<<<<< HEAD
 dist: trusty
 
 script:
 - make
   - git ls-files src/ | xargs clang-format -i && git diff --exit-code 
 language: cpp
+=======
+ 
+ dist: bionic
+ 
+ script: 
+  - wget https://github.com/google/googletest/archive/release-1.8.0.tar.gz
+  - tar xf release-1.8.0.tar.gz
+  - cd googletest-release-1.8.0
+  - cmake -DBUILD_SHARED_LIBS=ON .
+  - make
+  - cd googletest
+  - sudo cp -a include/gtest /usr/include
+  - cd ..
+  - cd googlemock
+  - cd gtest
+  - sudo cp -a libgtest_main.so libgtest.so /usr/lib/
+  - cd ..
+  - cd ..
+  - cd ..
+  - make test && make runtest
+  - git ls-files src/ | xargs clang-format -i && git diff --exit-code
+   
+   
+language:
+   cpp
+
+>>>>>>> 0c69980dd41c1d2620a7163ddd840e146253e513
 compiler: 
-  -g++
+   g++
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
