@@ -216,50 +216,48 @@ void showResult(short result) {
 	if (result <= 18) {
 		attron(COLOR_PAIR(1));
 		move(2, 10);
-		addstr(" _______   _______   __    _   ___    _______   ______   ");
+		addstr(" ######    #######   #######  ########  ");
 		move(3, 10);
-		addstr("|       | |       | |  |  | | |   |  |       | |    _ |  ");
+		addstr("##    ##  ##     ## ##     ## ##     ## ");
 		move(4, 10);
-		addstr("|  _____| |    ___| |   |_| | |   |  |   _   | |   | ||  ");
+		addstr("##        ##     ## ##     ## ##     ## ");
 		move(5, 10);
-		addstr("| |_____  |   |___  |       | |   |  |  | |  | |   |_||_ ");
+		addstr("##   #### ##     ## ##     ## ##     ## ");
 		move(6, 10);
-		addstr("|_____  | |    ___| |  _    | |   |  |  |_|  | |    __  |");
+		addstr("##    ##  ##     ## ##     ## ##     ## ");
 		move(7, 10);
-		addstr(" _____| | |   |___  | | |   | |   |  |       | |   |  | |");
+		addstr("##    ##  ##     ## ##     ## ##     ## ");
 		move(8, 10);
-		addstr("|_______| |_______| |_|  |__| |___|  |_______| |___|  |_|");
-		attroff(COLOR_PAIR(1));
+		addstr(" ######    #######   #######  ########  ");
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
 		move(14, 16);
-		addstr("Wow you are good bro");
+		addstr("Wow you are good bro.");
 		move(15, 16);
 		addstr("But you still is not as powerful as me!");
 		move(18, 16);
-		addstr("Go and whatch anime ininsed!");
-		border(0, 0, 0, 0, 0, 0, 0, 0);       
+		addstr("Go and whatch anime instead!");
+		     
 	} else
 	if (result <= 21) {
 		attron(COLOR_PAIR(1));
 		move(1, 3);
-		addstr("_________ _______  _______  _______    _        _______  _______  ______  ");
+		addstr("                                                                         ");
 		move(2, 3);
-		addstr("\\__   __/(  ____ \\(  ___  )(       )  ( \\      (  ____ \\(  ___  )(  __  \\ ");
+		addstr(" #######  ##     ## ######## ########  ##     ## #### ##    ## ########  ");
 		move(3, 3);
-		addstr("   ) (   | (    \\/| (   ) || () () |  | (      | (    \\/| (   ) || (  \\  )");
+		addstr("##     ## ##     ## ##       ##     ## ###   ###  ##  ###   ## ##     ## ");
 		move(4, 3);
-		addstr("   | |   | (__    | (___) || || || |  | |      | (__    | (___) || |   ) |");
+		addstr("##     ## ##     ## ##       ##     ## #### ####  ##  ####  ## ##     ## ");
 		move(5, 3);
-		addstr("   | |   |  __)   |  ___  || |(_)| |  | |      |  __)   |  ___  || |   | |");
+		addstr("##     ## ##     ## ######   ########  ## ### ##  ##  ## ## ## ##     ## ");
 		move(6, 3);
-		addstr("   | |   | (      | (   ) || |   | |  | |      | (      | (   ) || |   ) |");
+		addstr("##     ##  ##   ##  ##       ##   ##   ##     ##  ##  ##  #### ##     ## ");
 		move(7, 3);
-		addstr("   | |   | (____/\\| )   ( || )   ( |  | (____/\\| (____/\\| )   ( || (__/  )");
+		addstr("##     ##   ## ##   ##       ##    ##  ##     ##  ##  ##   ### ##     ## ");
 		move(8, 3);
-		addstr("   )_(   (_______/|/     \\||/     \\|  (_______/(_______/|/     \\|(______/ ");		
-		attroff(COLOR_PAIR(1));
+		addstr(" #######     ###    ######## ##     ## ##     ## #### ##    ## ########  ");		
 		attron(COLOR_PAIR(2));
 		move(11, 29);
 		printw("Your result - %d", result);
@@ -269,7 +267,7 @@ void showResult(short result) {
 		addstr("spend his time on this test?.");
 		move(18, 16);
 		addstr("Anyway you can call yourself megamind!");
-		border(0, 0, 0, 0, 0, 0, 0, 0);      
+		   
 	}
 	getch();
 }
