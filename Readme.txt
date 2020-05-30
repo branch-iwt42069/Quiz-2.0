@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kontra0061/lab-4.svg?branch=master)](https://travis-ci.org/branch-iwt42069/Quiz-2.0)
+[![Build Status](https://travis-ci.org/branch-iwt42069/Quiz-2.0.svg?branch=master)](https://travis-ci.org/github/branch-iwt42069/Quiz-2.0)
 # QuizRunner
 Testing system
 ***our coursework***
